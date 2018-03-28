@@ -1,0 +1,39 @@
+:global(.iconfont) {
+  margin-right: 5px;
+  padding: 3px 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+:global(.icon-top-background) {
+  background: red;
+}
+
+:global(.icon-ask-background) {
+  background: blue;
+}
+
+:global(.icon-share-background) {
+  background: green;
+}
+
+:global(.icon-job-background) {
+  background: #00b38a;
+}
+
+:global(.icon-good-background) {
+  background: violet;
+}
+
+:global(.icon-dianzan-background , .icon-huifu-background){
+  background: transparent;
+}
+
+:global(.icon) {
+  line-height: 28px;
+  float: left;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  border-radius: 8px;
+}

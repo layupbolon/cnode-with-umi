@@ -1,0 +1,10 @@
+.userImage {
+  display: inline-block;
+  float: left;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background-color: #eee;
+  background-size: cover;
+}
