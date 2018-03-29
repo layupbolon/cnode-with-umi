@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 import * as services from '../../../services';
 
 export default {
@@ -6,6 +8,17 @@ export default {
 
   state: {
     dataSource: []
+  },
+
+  subscriptions: {
+    setup({dispatch, history}) {
+      return history.listen(({pathname}) => {
+        const result = _.split(_.trimStart(pathname, '/'), '/');
+        if (result[0] === 'topicDetail') {
+          dispatch({type: 'getTopicDetailData', payload: {id: result[1]}});
+        }
+      });
+    },
   },
 
   reducers: {
