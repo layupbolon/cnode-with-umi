@@ -55,7 +55,8 @@ function TopicDetail({dataSource}) {
                     <div className={styles.replyInfo}>
                       <div>
                         <div className={styles.replyInfo_left}>
-                          <span>{item.author.loginname}</span> {dataFormat(item.create_at)}
+                          <Link className={styles.replyInfo_left_name}
+                                to={`/user/${item.author.loginname}`}>{item.author.loginname}</Link> {dataFormat(item.create_at)}
                         </div>
                         <div className={styles.replyInfo_floor}>#{index + 1}</div>
                       </div>

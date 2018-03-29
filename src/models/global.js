@@ -2,14 +2,16 @@ export default {
 
   namespace: 'global',
 
-  state: {},
+  state: {
+  },
 
   subscriptions: {
     setup({dispatch, history}) {
     },
   },
 
-  reducers: {},
+  reducers: {
+  },
 
   effects: {},
 };

@@ -1,0 +1,33 @@
+.wrap {
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.up {
+  height: 26vh;
+  background-color: #00aaff;
+  display: flex;
+  justify-content: center;
+  /*padding: 10px 0;*/
+}
+
+.up_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.up_wrap span {
+  color: #fff;
+}
+
+.userName {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.userInfo {
+  font-size: 12px;
+}

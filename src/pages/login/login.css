@@ -1,0 +1,26 @@
+.login{
+  margin-top: 7vh;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  width: 250px;
+  height:40px;
+  line-height: 28px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.btn{
+  width: 250px;
+  height:40px;
+  background: #00b38a;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+}

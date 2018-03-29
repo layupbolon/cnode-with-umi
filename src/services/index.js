@@ -31,3 +31,19 @@ export function GetTopicDetail(id) {
   const url = `/api/topic/${id}?${randomData()}`;
   return request(url);
 }
+
+export function GetUserData(userName) {
+  const url = `/api/user/${userName}?${randomData()}`;
+  return request(url);
+}
+
+export function Login(accesstoken) {
+  const url = '/api/accesstoken';
+  return request(url, {
+    method: 'POST',
+    body: JSON.stringify({accesstoken}),
+    headers: {
+      "Content-Type": "application/json"
+    },
+  });
+}
