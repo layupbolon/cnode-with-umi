@@ -21,10 +21,24 @@ function checkStatus(response) {
  * @param  {object} [options] The options we want to pass to "fetch"
  * @return {object}           An object containing either "data" or "err"
  */
-export default function request(url, options) {
+function request(url, options) {
   return fetch(url, options)
     .then(checkStatus)
     .then(parseJSON)
-    .then(data => ({ data }))
-    .catch(err => ({ err }));
+    .then(data => ({data}))
+    .catch(err => ({err}));
+}
+
+export function get(url) {
+  return request(url);
+}
+
+export function post(url, data) {
+  return request(url, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json"
+    },
+  })
 }

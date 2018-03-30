@@ -15,7 +15,7 @@ export default {
       if (result.data && result.data.success) {
         cb && cb(true, '发表成功');
       } else {
-        cb & cb(false, '发表失败，请重试');
+        cb && cb(false, '发表失败，请重试');
       }
     },
   },

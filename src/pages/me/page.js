@@ -40,9 +40,9 @@ class Me extends React.PureComponent {
               })
             },
           ])
-        }}></Nav>
-        <UserInfo userData={userData}></UserInfo>
-        <Footer selectedIndex={3}></Footer>
+        }}/>
+        <UserInfo userData={userData}/>
+        <Footer selectedIndex={3}/>
       </div>
     )
   }

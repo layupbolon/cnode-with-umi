@@ -8,9 +8,9 @@ import {Footer} from '../../components';
 function IndexPage() {
   return (
     <div>
-      <Head></Head>
-      <List></List>
-      <Footer selectedIndex={0}></Footer>
+      <Head/>
+      <List/>
+      <Footer selectedIndex={0}/>
     </div>
   );
 }

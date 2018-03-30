@@ -12,9 +12,9 @@ class Login extends React.PureComponent {
 
     return (
       <div>
-        <Nav title={'登录'}></Nav>
+        <Nav title={'登录'}/>
         <div className={styles.login}>
-          <input className={styles.input} ref="accesstoken" type="text" placeholder="Access Token"></input>
+          <input className={styles.input} ref="accesstoken" type="text" placeholder="Access Token"/>
           <button className={styles.btn} onClick={() => {
             dispatch({
               type: 'login/login', payload: {

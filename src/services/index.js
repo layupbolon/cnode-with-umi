@@ -1,4 +1,4 @@
-import request from '../utils/request';
+import {get, post} from '../utils/request';
 import {randomData} from '../utils';
 
 export function GetTopics(setting) {
@@ -24,37 +24,30 @@ export function GetTopics(setting) {
   }
   url += '&mdrender=false&' + randomData();
 
-  return request(url);
+  return get(url);
 }
 
-export function GetTopicDetail(id) {
-  const url = `/api/topic/${id}?${randomData()}`;
-  return request(url);
+export function GetTopicDetail(id,accesstoken) {
+  const url = `/api/topic/${id}?${randomData()}&mdrender=true&accesstoken=${accesstoken}`;
+  return get(url);
 }
 
 export function GetUserData(userName) {
   const url = `/api/user/${userName}?${randomData()}`;
-  return request(url);
+  return get(url);
 }
 
 export function Login(accesstoken) {
   const url = '/api/accesstoken';
-  return request(url, {
-    method: 'POST',
-    body: JSON.stringify({accesstoken}),
-    headers: {
-      "Content-Type": "application/json"
-    },
-  });
+  return post(url, {accesstoken});
 }
 
 export function Publish(data) {
   const url = '/api/topics';
-  return request(url,{
-    method: 'POST',
-    body: JSON.stringify(data),
-    headers: {
-      "Content-Type": "application/json"
-    },
-  })
+  return post(url, data);
+}
+
+export function replyUp(reply_id, accesstoken) {
+  const url = `/api/reply/${reply_id}/ups`;
+  return post(url, {accesstoken});
 }

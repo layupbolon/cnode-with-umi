@@ -78,7 +78,7 @@ class Publish extends React.PureComponent {
                       }}/>
           </div>
         </div>
-        <Footer selectedIndex={1}></Footer>
+        <Footer selectedIndex={1}/>
       </div>
     )
   }

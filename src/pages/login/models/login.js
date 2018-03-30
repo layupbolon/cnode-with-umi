@@ -1,5 +1,4 @@
 import * as services from '../../../services';
-import {SetItem} from "../../../utils";
 
 export default {
 
