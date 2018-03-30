@@ -27,7 +27,7 @@ export function GetTopics(setting) {
   return get(url);
 }
 
-export function GetTopicDetail(id,accesstoken) {
+export function GetTopicDetail(id, accesstoken) {
   const url = `/api/topic/${id}?${randomData()}&mdrender=true&accesstoken=${accesstoken}`;
   return get(url);
 }
@@ -50,4 +50,10 @@ export function Publish(data) {
 export function replyUp(reply_id, accesstoken) {
   const url = `/api/reply/${reply_id}/ups`;
   return post(url, {accesstoken});
+}
+
+export function PostReply(data) {
+  const {topic_id, ...rest} = data;
+  const url = `/api/topic/${topic_id}/replies`;
+  return post(url, rest);
 }

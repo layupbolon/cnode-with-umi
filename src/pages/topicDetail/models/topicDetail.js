@@ -38,10 +38,16 @@ export default {
         type: 'changeState',
         payload: {key: 'dataSource', value: topicData.data.data}
       });
-      yield put({
-        type: 'changeState',
-        payload: {key: 'replyItems', value: topicData.data.data.replies}
-      });
+
+      if (topicData.data.data.replies && topicData.data.data.replies.length > 0) {
+        topicData.data.data.replies.forEach(item => {
+          item.showReplyBox = false;
+        });
+        yield put({
+          type: 'changeState',
+          payload: {key: 'replyItems', value: topicData.data.data.replies}
+        });
+      }
     },
 
     * replyUp({payload}, {call, put, select}) {
@@ -70,6 +76,29 @@ export default {
           type: 'changeState',
           payload: {key: 'replyItems', value: replyItems}
         });
+      }
+    },
+
+    * showReplyBox({payload}, {put, select}) {
+      const {index} = payload;
+      let {replyItems} = yield select(state => ({
+          replyItems: state.topicDetail.replyItems
+        })
+      );
+      if (replyItems && replyItems.length > 0) {
+        replyItems[index].showReplyBox = !replyItems[index].showReplyBox;
+      }
+      yield put({
+        type: 'changeState',
+        payload: {key: 'replyItems', value: replyItems}
+      });
+    },
+
+    * submitReply({payload}, {call}) {
+      const {submitData, cb} = payload;
+      const result = yield call(services.PostReply, submitData);
+      if (result.data.success) {
+        cb && cb();
       }
     }
   },

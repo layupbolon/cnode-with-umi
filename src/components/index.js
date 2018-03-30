@@ -5,3 +5,4 @@ export Nav from './nav';
 export Footer from './tabs';
 export List from './list';
 export UserInfo from './userInfo';
+export Comment from './comment';
