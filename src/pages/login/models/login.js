@@ -25,5 +25,10 @@ export default {
         payload.cb && payload.cb(false, '登录失败');
       }
     },
+
+    * logout({payload},{call}){
+      localStorage.removeItem('User');
+      payload.cb && payload.cb();
+    }
   },
 };

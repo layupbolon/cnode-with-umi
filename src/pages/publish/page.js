@@ -2,12 +2,24 @@ import React from 'react';
 import {connect} from 'dva';
 
 import styles from './publish.css';
-import {Nav,Footer} from '../../components';
+import {Nav, Footer} from '../../components';
 
-function Publish({dispatch}) {
+function Publish() {
+  if (!localStorage.getItem('User')) {
+    return (
+      <div>
+        <Nav title={'发表主题'} showBackIcon={false}></Nav>
+        <div className={styles.notLogin}>
+          您还未登录，请先<a className={styles.loginText} href={'/login'}>登录</a>
+        </div>
+        <Footer selectedIndex={1}></Footer>
+      </div>
+    )
+  }
+
   return (
     <div>
-      <Nav title={'发表主题'} showBackIcon={false} showPublishIcon={true} publishFun={() => {
+      <Nav title={'发表主题'} showBackIcon={false} showPublishIcon={true} rightIconFunc={() => {
         //to do sth publish
       }}></Nav>
       <div className={styles.publish}>
@@ -31,5 +43,6 @@ function Publish({dispatch}) {
     </div>
   )
 }
+
 
 export default connect()(Publish);

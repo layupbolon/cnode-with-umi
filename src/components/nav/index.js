@@ -8,8 +8,7 @@ function Nav({
                showBackIcon = true,
                showSignOutIcon = false,
                showPublishIcon = false,
-               publishFun = () => {
-               }
+               rightIconFunc = () => {}
              }) {
   return (
     <header className={styles.nav}>
@@ -26,14 +25,14 @@ function Nav({
       {
         showSignOutIcon ? (
           <div className={styles.navSign}>
-            <a onClick={() => router.goBack()}>
+            <a onClick={() => rightIconFunc()}>
               <i className="iconfont icon-tuichu" style={{fontSize: '23px'}}></i>
             </a>
           </div>
         ) : showPublishIcon ? (
             <div className={styles.navPublish}>
               <a onClick={() => {
-                publishFun();
+                rightIconFunc();
               }}>
                 <i className="iconfont icon-fabu" style={{fontSize: '23px'}}></i>
               </a>

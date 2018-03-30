@@ -11,6 +11,8 @@ const tabs = [
 ];
 
 function UserInfo({userData}) {
+  if (!userData) return null;
+
   return (
     <div className={styles.wrap}>
       <div className={styles.up}>

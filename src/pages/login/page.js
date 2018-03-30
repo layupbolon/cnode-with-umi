@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'dva';
+import router from 'umi/router';
 import {Toast} from 'antd-mobile';
 
 import {Nav} from '../../components';
@@ -19,7 +20,12 @@ class Login extends React.PureComponent {
               type: 'login/login', payload: {
                 accesstoken: this.refs.accesstoken.value,
                 cb: (isSuccess, msg) => {
-                  isSuccess ? Toast.success(msg, 1) : Toast.fail(msg, 1);
+                  if (isSuccess) {
+                    Toast.success(msg, 1);
+                    router.replace('/me');
+                  } else {
+                    Toast.fail(msg, 1);
+                  }
                 }
               }
             })
