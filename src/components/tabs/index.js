@@ -24,7 +24,7 @@ function Footer({selectedIndex}) {
         <i className={"iconfont icon-fabu"} style={{width: '15px', height: '15px'}}></i>
         <span>发表</span>
       </Link>
-      <Link to={'/topicList'}
+      <Link to={'/msg'}
             className={styles.tabsItem}
             style={styleHandler(selectedIndex, 2)}
       >

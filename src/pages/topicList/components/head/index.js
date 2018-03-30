@@ -16,6 +16,8 @@ function mapTabNameToCode(tab) {
       return 'ask';
     case '招聘':
       return 'job';
+    case '测试':
+      return 'dev';
     default:
       return 'all';
   }
@@ -26,7 +28,7 @@ function Head({dispatch, selectedIndex}) {
     <SegmentedControl
       selectedIndex={selectedIndex}
       className={styles.head}
-      values={['全部', '精华', '分享', '问答', '招聘']}
+      values={['全部', '精华', '分享', '问答', '招聘', '测试']}
       onChange={(e) => {
         dispatch({type: 'topicList/initState'});
         dispatch({

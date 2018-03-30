@@ -47,3 +47,14 @@ export function Login(accesstoken) {
     },
   });
 }
+
+export function Publish(data) {
+  const url = '/api/topics';
+  return request(url,{
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json"
+    },
+  })
+}
