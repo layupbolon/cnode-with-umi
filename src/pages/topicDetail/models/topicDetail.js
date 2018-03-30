@@ -27,10 +27,18 @@ export default {
     changeState(state, {payload}) {
       return {...state, ...{[payload.key]: payload.value}};
     },
+    initState(state, {payload}) {
+      return {
+        dataSource: {},
+        replyItems: [],
+      }
+    }
   },
 
   effects: {
     * getTopicDetailData({payload}, {call, put}) {
+      yield put({type: 'initState'});
+
       const {id, accesstoken} = payload;
       const topicData = yield call(services.GetTopicDetail, id, accesstoken);
 
