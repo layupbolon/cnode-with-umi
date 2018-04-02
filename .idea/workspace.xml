@@ -16,7 +16,7 @@
       <change beforePath="$PROJECT_DIR$/static/index.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/static/static/iconfont.7074246f.ttf" afterPath="" />
       <change beforePath="$PROJECT_DIR$/static/static/iconfont.cc5250e7.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/umi.1be6a1ee.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/umi.242efe58.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/static/umi.b56ba215.css" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,7 +36,7 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -179,6 +179,11 @@
               <item name="cnode" type="b2602c69:ProjectViewProjectNode" />
               <item name="cnode" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cnode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cnode" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -201,14 +206,14 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/pages/topicList/components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -310,7 +315,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108268000" />
+    <option name="totallyTimeSpent" value="108300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -425,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-worker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -441,8 +439,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="138" lean-forward="true" selection-start-line="1" selection-start-column="138" selection-end-line="1" selection-end-column="138" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-worker.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="534" lean-forward="false" selection-start-line="0" selection-start-column="524" selection-end-line="0" selection-end-column="534" />
+          <caret line="0" column="3851" lean-forward="true" selection-start-line="0" selection-start-column="3851" selection-end-line="0" selection-end-column="3851" />
+          <folding />
         </state>
       </provider>
     </entry>
