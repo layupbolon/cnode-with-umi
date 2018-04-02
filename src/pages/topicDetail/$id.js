@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'dva';
 import Link from 'umi/link';
+import {Toast} from 'antd-mobile'
 
 import {Icon, UserImage, Nav, Comment} from '../../components';
 import {dataFormat, getUserInfo} from '../../utils';
@@ -73,7 +74,11 @@ function TopicDetail({dataSource, replies, dispatch}) {
                         <i className="iconfont icon-dianzan"
                            onClick={() => {
                              const userInfo = getUserInfo();
-                             if(userInfo){
+                             if (userInfo) {
+                               if (userInfo.loginname === item.author.loginname) {
+                                 Toast.fail('不能为自己点赞哦', 2);
+                                 return;
+                               }
                                dispatch({
                                  type: 'topicDetail/replyUp',
                                  payload: {
@@ -91,7 +96,7 @@ function TopicDetail({dataSource, replies, dispatch}) {
                       </div>
                       <i className="iconfont icon-huifu" style={{color: 'black'}} onClick={() => {
                         const userInfo = getUserInfo();
-                        if(userInfo){
+                        if (userInfo) {
                           dispatch({type: 'topicDetail/showReplyBox', payload: {index}});
                         }
                       }}/>
