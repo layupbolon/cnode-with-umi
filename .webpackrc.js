@@ -1,5 +1,5 @@
 export default {
-  "publicPath": "/static/",
+  "publicPath": "/cnode-with-umi/static/",
   "proxy": {
     "/api": {
       "target": "https://cnodejs.org/api/v1",

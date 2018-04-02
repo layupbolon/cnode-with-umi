@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "umi dev",
-    "build": "umi build",
+    "build": "BASE_URL=/conde-with-umi/ umi build",
     "lint": "eslint --ext .js src test",
     "precommit": "npm run lint"
   },
