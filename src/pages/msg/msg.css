@@ -1,11 +1,54 @@
 
-.notLogin{
+.notLogin {
   display: flex;
   justify-content: center;
   margin-top: 14vh;
   font-size: 16px;
 }
 
-.loginText{
+.loginText {
+  color: #108ee9;
+}
+
+.msgItemWrap {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ddd;
+  padding: 3px;
+  min-height: 60px;
+}
+
+.msgItemUserImage {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msgItemRight {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.msgItemUp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.msgItemUserName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.msgItemDate {
+  font-size: 12px;
+  font-weight: lighter;
+  margin-left: 8px;
+}
+
+.topicTitle {
   color: #108ee9;
 }
