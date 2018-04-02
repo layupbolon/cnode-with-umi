@@ -57,7 +57,9 @@ class Publish extends React.PureComponent {
               <option value="share">分享</option>
               <option value="ask">问答</option>
               <option value="job">招聘</option>
-              <option value="dev">测试</option>
+              {
+                process.env.NODE_ENV === 'development' && <option value="dev">测试</option>
+              }
             </select>
           </div>
           <div className={styles.item}>

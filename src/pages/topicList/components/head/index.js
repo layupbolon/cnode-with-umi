@@ -24,11 +24,16 @@ function mapTabNameToCode(tab) {
 }
 
 function Head({dispatch, selectedIndex}) {
+  let dataSource = ['全部', '精华', '分享', '问答', '招聘'];
+  console.log('process.env.NODE_ENV', process.env.NODE_ENV);
+  if (process.env.NODE_ENV === 'development') {
+    dataSource.push('测试');
+  }
   return (
     <SegmentedControl
       selectedIndex={selectedIndex}
       className={styles.head}
-      values={['全部', '精华', '分享', '问答', '招聘', '测试']}
+      values={dataSource}
       onChange={(e) => {
         dispatch({type: 'topicList/initState'});
         dispatch({
