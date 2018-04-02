@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bce228a6-0113-4e4b-8f69-5d667a7e0819" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/0.c8b40094.async.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/1.f2cd5f0f.async.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/2.137b6fd3.async.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/3.4498248a.async.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/4.28003ec6.async.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/5.6b9e8901.async.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/6.bc2b29ab.async.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/7.303b79f9.async.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/umi.3773375a.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/umi.3f9949e9.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/service-worker.js" afterPath="$PROJECT_DIR$/service-worker.js" />
-      <change beforePath="$PROJECT_DIR$/static/0.812902f1.async.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/1.3635b071.async.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/2.4137d15b.async.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/3.7f2e8140.async.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/4.be812c39.async.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/5.7b042628.async.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/6.6a023f40.async.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/7.bee462c0.async.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/8.3b35c7c2.async.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/umi.36d04727.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/umi.d58bad2a.css" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,11 +23,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service-worker.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/service-worker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="1039" lean-forward="false" selection-start-line="0" selection-start-column="1039" selection-end-line="0" selection-end-column="1039" />
               <folding />
             </state>
           </provider>
@@ -103,8 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/topicList/index.css" />
-        <option value="$PROJECT_DIR$/src/pages/topicList/components/index.js" />
         <option value="$PROJECT_DIR$/src/pages/topicList/components/list/index.js" />
         <option value="$PROJECT_DIR$/src/pages/topicDetail/page.js" />
         <option value="$PROJECT_DIR$/src/pages/topicList/components/listItem/index.js" />
@@ -154,6 +150,8 @@
         <option value="$PROJECT_DIR$/src/pages/me/page.js" />
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/service-worker.js" />
       </list>
     </option>
   </component>
@@ -197,6 +195,11 @@
             <path>
               <item name="cnode" type="b2602c69:ProjectViewProjectNode" />
               <item name="cnode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cnode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cnode" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,11 +321,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522637102354</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update">
+      <created>1522639750507</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1522639750507</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107675000" />
+    <option name="totallyTimeSpent" value="108052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -376,7 +386,8 @@
     <MESSAGE value="add comment function" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="add user authority" />
-    <option name="LAST_COMMIT_MESSAGE" value="add user authority" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -429,21 +440,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/comment/index.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/login/page.js" />
     <entry file="file://$PROJECT_DIR$/dist/static/umi.4fa8cfbf.js" />
-    <entry file="file://$PROJECT_DIR$/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/0.812902f1.async.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-worker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -458,10 +455,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="43" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1039" lean-forward="false" selection-start-line="0" selection-start-column="1039" selection-end-line="0" selection-end-column="1039" />
           <folding />
         </state>
       </provider>
