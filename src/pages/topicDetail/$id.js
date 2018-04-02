@@ -3,14 +3,14 @@ import {connect} from 'dva';
 import Link from 'umi/link';
 
 import {Icon, UserImage, Nav, Comment} from '../../components';
-import {dataFormat} from '../../utils';
+import {dataFormat, getUserInfo} from '../../utils';
 import styles from './topicDetail.css';
 
 function TopicDetail({dataSource, replies, dispatch}) {
   if (!dataSource || !dataSource.id)
     return null;
 
-  const userInfo = JSON.parse(localStorage.getItem('User'));
+  const storageResult = localStorage.getItem('User');
 
   return (
     <div>
@@ -72,13 +72,16 @@ function TopicDetail({dataSource, replies, dispatch}) {
                       <div style={{display: 'flex', justifyContent: 'flex-start', alignItems: 'center'}}>
                         <i className="iconfont icon-dianzan"
                            onClick={() => {
-                             dispatch({
-                               type: 'topicDetail/replyUp',
-                               payload: {
-                                 reply_id: item.id,
-                                 accesstoken: userInfo.accesstoken
-                               }
-                             });
+                             const userInfo = getUserInfo();
+                             if(userInfo){
+                               dispatch({
+                                 type: 'topicDetail/replyUp',
+                                 payload: {
+                                   reply_id: item.id,
+                                   accesstoken: userInfo.accesstoken
+                                 }
+                               });
+                             }
                            }}
                            style={item.is_uped ? {color: 'green'} : {color: 'black'}}/>
                         <em className={styles.replyUps}
@@ -87,20 +90,25 @@ function TopicDetail({dataSource, replies, dispatch}) {
                         </em>
                       </div>
                       <i className="iconfont icon-huifu" style={{color: 'black'}} onClick={() => {
-                        dispatch({type: 'topicDetail/showReplyBox', payload: {index}});
+                        const userInfo = getUserInfo();
+                        if(userInfo){
+                          dispatch({type: 'topicDetail/showReplyBox', payload: {index}});
+                        }
                       }}/>
                     </div>
                   </div>
                   {
-                    item.showReplyBox && <Comment topic_id={dataSource.id} reply_id={item.id} commetTo={item.author.loginname}/>
+                    item.showReplyBox && storageResult &&
+                    <Comment topic_id={dataSource.id} reply_id={item.id} commetTo={item.author.loginname}/>
                   }
                 </li>
               );
             })
           }
         </ul>
-
-        <Comment topic_id={dataSource.id}/>
+        {
+          storageResult && <Comment topic_id={dataSource.id}/>
+        }
       </div>
     </div>
   )

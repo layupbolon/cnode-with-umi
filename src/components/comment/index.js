@@ -3,6 +3,7 @@ import {connect} from 'dva';
 import router from 'umi/router';
 
 import styles from './index.css';
+import {getUserInfo} from '../../utils';
 
 class Comment extends React.PureComponent {
   state = {
@@ -12,7 +13,7 @@ class Comment extends React.PureComponent {
   render() {
     const {content} = this.state;
     const {dispatch, topic_id, reply_id, commetTo} = this.props;
-    const userInfo = JSON.parse(localStorage.getItem('User'));
+    const userInfo = getUserInfo();
 
     return (
       <div className={styles.comment}>

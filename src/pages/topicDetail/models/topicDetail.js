@@ -16,8 +16,13 @@ export default {
       return history.listen(({pathname}) => {
         const result = _.split(_.trimStart(pathname, '/'), '/');
         if (result[0] === 'topicDetail') {
-          const storageResult = JSON.parse(localStorage.getItem('User'));
-          dispatch({type: 'getTopicDetailData', payload: {id: result[1], accesstoken: storageResult.accesstoken}});
+          const storageResult = localStorage.getItem('User');
+          if (storageResult) {
+            const userInfo = JSON.parse(storageResult);
+            dispatch({type: 'getTopicDetailData', payload: {id: result[1], accesstoken: userInfo.accesstoken}});
+          } else {
+            dispatch({type: 'getTopicDetailData', payload: {id: result[1]}});
+          }
         }
       });
     },

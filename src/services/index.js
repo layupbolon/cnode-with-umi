@@ -28,7 +28,10 @@ export function GetTopics(setting) {
 }
 
 export function GetTopicDetail(id, accesstoken) {
-  const url = `/api/topic/${id}?${randomData()}&mdrender=true&accesstoken=${accesstoken}`;
+  let url = `/api/topic/${id}?${randomData()}`;
+  if (accesstoken) {
+    url += `&mdrender=true&accesstoken=${accesstoken}`;
+  }
   return get(url);
 }
 

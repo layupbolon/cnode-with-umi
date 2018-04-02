@@ -3,6 +3,7 @@ import {connect} from 'dva';
 import router from 'umi/router';
 import {Modal} from 'antd-mobile';
 
+import {getUserInfo} from '../../utils';
 import {Nav, UserInfo, Footer} from '../../components';
 
 const Alert = Modal.alert;
@@ -16,8 +17,10 @@ class Me extends React.PureComponent {
     }
 
     const user = JSON.parse(storageResult);
-    const {dispatch} = this.props;
-    dispatch({type: 'user/getUserData', payload: {userName: user.loginname}});
+    if(user){
+      const {dispatch} = this.props;
+      dispatch({type: 'user/getUserData', payload: {userName: user.loginname}});
+    }
   }
 
   render() {

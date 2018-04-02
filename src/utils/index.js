@@ -1,3 +1,5 @@
+import router from 'umi/router';
+
 export const dataFormat = (str) => {
   let date = new Date(str);
   let time = new Date().getTime() - date.getTime(); //现在的时间-传入的时间 = 相差的时间（单位 = 毫秒）
@@ -20,4 +22,14 @@ export const dataFormat = (str) => {
 
 export const randomData = () => {
   return Math.random().toString(36).substr(2);
+};
+
+export const getUserInfo = () => {
+  const storageResult = localStorage.getItem('User');
+  if (!storageResult) {
+    router.push('/login');
+    return false;
+  }
+
+  return JSON.parse(storageResult);
 };
