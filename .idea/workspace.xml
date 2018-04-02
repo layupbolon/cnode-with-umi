@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bce228a6-0113-4e4b-8f69-5d667a7e0819" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/service-worker.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/service-worker.js" afterPath="$PROJECT_DIR$/service-worker.js" />
       <change beforePath="$PROJECT_DIR$/static/0.c8b40094.async.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/static/1.f2cd5f0f.async.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/static/2.137b6fd3.async.js" afterPath="" />
@@ -16,8 +16,8 @@
       <change beforePath="$PROJECT_DIR$/static/index.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/static/static/iconfont.7074246f.ttf" afterPath="" />
       <change beforePath="$PROJECT_DIR$/static/static/iconfont.cc5250e7.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/umi.3773375a.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/umi.3f9949e9.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/umi.1be6a1ee.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/umi.b56ba215.css" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,7 +36,7 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -201,14 +201,14 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/pages/topicList/components" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -310,7 +310,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108225000" />
+    <option name="totallyTimeSpent" value="108268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -429,7 +429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -437,7 +436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -445,7 +443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="534" lean-forward="false" selection-start-line="0" selection-start-column="524" selection-end-line="0" selection-end-column="534" />
-          <folding />
         </state>
       </provider>
     </entry>
