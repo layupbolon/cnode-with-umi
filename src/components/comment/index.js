@@ -37,6 +37,7 @@ class Comment extends React.PureComponent {
               submitData.reply_id = reply_id;
               submitData.content = `[@${commetTo}](/user/${commetTo}) ${content}`;
             }
+            submitData.content += '\n\rFrom [cnode-with-umi](https://github.com/layupbolon/cnode-with-umi)';
             dispatch({
               type: 'topicDetail/submitReply', payload: {
                 submitData,cb:()=>{
