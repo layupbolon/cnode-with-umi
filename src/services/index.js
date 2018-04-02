@@ -9,7 +9,7 @@ export function GetTopics(setting) {
   };
   let newSetting = Object.assign(defaultSetting, setting);
 
-  let url = '/api/topics?';
+  let url = 'https://cnodejs.org/api/v1/topics?';
   if (newSetting.pageIndex) {
     url += 'page=' + newSetting.pageIndex;
   }
@@ -28,7 +28,7 @@ export function GetTopics(setting) {
 }
 
 export function GetTopicDetail(id, accesstoken) {
-  let url = `/api/topic/${id}?${randomData()}`;
+  let url = `https://cnodejs.org/api/v1/topic/${id}?${randomData()}`;
   if (accesstoken) {
     url += `&mdrender=true&accesstoken=${accesstoken}`;
   }
@@ -36,27 +36,27 @@ export function GetTopicDetail(id, accesstoken) {
 }
 
 export function GetUserData(userName) {
-  const url = `/api/user/${userName}?${randomData()}`;
+  const url = `https://cnodejs.org/api/v1/user/${userName}?${randomData()}`;
   return get(url);
 }
 
 export function Login(accesstoken) {
-  const url = '/api/accesstoken';
+  const url = 'https://cnodejs.org/api/v1/accesstoken';
   return post(url, {accesstoken});
 }
 
 export function Publish(data) {
-  const url = '/api/topics';
+  const url = 'https://cnodejs.org/api/v1/topics';
   return post(url, data);
 }
 
 export function replyUp(reply_id, accesstoken) {
-  const url = `/api/reply/${reply_id}/ups`;
+  const url = `https://cnodejs.org/api/v1/reply/${reply_id}/ups`;
   return post(url, {accesstoken});
 }
 
 export function PostReply(data) {
   const {topic_id, ...rest} = data;
-  const url = `/api/topic/${topic_id}/replies`;
+  const url = `https://cnodejs.org/api/v1/topic/${topic_id}/replies`;
   return post(url, rest);
 }
