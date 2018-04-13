@@ -18,6 +18,8 @@ npm install
 
 ```
 npm run start
+npm run electron（客户端）
+
 npm run build
 ```
 
@@ -70,6 +72,7 @@ npm run build
 - [x] 我的消息
 - [x] 个人中心
 - [x] 查看其它用户的资料
+- [x] electron
 - [ ] 消息提示（已读未读）
 > 所有API由[cnode](https://cnodejs.org/api)提供
 
