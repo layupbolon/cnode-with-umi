@@ -1,20 +1,20 @@
 import React from 'react';
-import {connect} from 'dva';
+import { connect } from 'dva';
 
-import {Nav, UserInfo} from '../../components';
+import { Nav, UserInfo } from '../../components';
 
-function User({userData}) {
+function User({ userData }) {
 
-  return (
-    <div>
-      <Nav title={`${userData.loginname}的个人中心`}/>
-      <UserInfo userData={userData}></UserInfo>
-    </div>
-  )
+    return (
+        <div>
+            <Nav title={`${userData.loginname}的个人中心`} />
+            <UserInfo userData={userData}></UserInfo>
+        </div>
+    );
 }
 
-function mapStateToProp({user}) {
-  return {userData: user.userData};
+function mapStateToProp({ user }) {
+    return { userData: user.userData };
 }
 
 export default connect(mapStateToProp)(User);

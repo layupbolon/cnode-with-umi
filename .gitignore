@@ -5,13 +5,21 @@
 
 # production
 /dist
+/vscode
 
 # misc
 .DS_Store
 npm-debug.log*
+yarn-error.log
 
 # umi
 .umi
 .umi-production
 
+/coverage
 .idea
+yarn.lock
+package-lock.json
+*bak
+jsconfig.json
+.vscode/settings.json

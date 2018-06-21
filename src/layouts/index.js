@@ -1,22 +1,23 @@
 import React from 'react';
-import {connect} from 'dva';
+import { connect } from 'dva';
+import withRouter from 'umi/withRouter';
 
-import {Loading} from '../components';
+import { Loading } from '../components';
 
-function Layout({children, isLoading}) {
-  return (
-    <div>
-      <Loading isLoading={isLoading}/>
-      {children}
-    </div>
-  )
+function Layout({ children, isLoading }) {
+    return (
+        <div>
+            <Loading isLoading={isLoading} />
+            {children}
+        </div>
+    );
 }
 
 function mapStateToProp(state) {
-  const {global} = state.loading;
-  return {
-    isLoading: global
-  };
+    const { global } = state.loading;
+    return {
+        isLoading: global
+    };
 }
 
-export default connect(mapStateToProp)(Layout);
+export default withRouter(connect(mapStateToProp)(Layout));
