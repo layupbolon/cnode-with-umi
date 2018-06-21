@@ -77,7 +77,7 @@ npm run build
 > 所有API由[cnode](https://cnodejs.org/api)提供
 
 ### 总结
-###### 本项目中使用[umi@1.0](https://umijs.org/)[工具 + 路由] + [dva@2.0](https://github.com/dvajs/dva)[数据] + [antd-mobile](https://mobile.ant.design/index-cn)[视图]。全是阿里出品，你值得拥有👍
+###### 本项目中使用[umi@1.3](https://umijs.org/)[工具 + 路由] + [dva@2.3](https://github.com/dvajs/dva)[数据] + [antd-mobile](https://mobile.ant.design/index-cn)[视图]。全是阿里出品，你值得拥有👍
 
 ##### umi是什么？
 umi是一个开发框架，目前包含工具+路由，也就是 ***webpack + webpack-dev-server + babel + postcss + ... + react-router***，其中让我觉得最亮眼的就是文件结构即路由，很赞！  

@@ -16,5 +16,5 @@ export default {
   //     ignore: "/User"
   //   }
   // },
-  hashHistory: true
+  // hashHistory: true
 };
