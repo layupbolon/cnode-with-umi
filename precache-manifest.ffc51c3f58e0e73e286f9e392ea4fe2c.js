@@ -12,11 +12,11 @@ self.__precacheManifest = [
     "url": "/p__publish__index.async.js"
   },
   {
-    "revision": "db519e64b42f1b676dc5",
+    "revision": "6581d0d5eceda4ea966d",
     "url": "/umi.css"
   },
   {
-    "revision": "db519e64b42f1b676dc5",
+    "revision": "6581d0d5eceda4ea966d",
     "url": "/umi.js"
   },
   {
