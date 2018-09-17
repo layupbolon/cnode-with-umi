@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'dva';
 
 import './index.css';
@@ -7,11 +7,11 @@ import { Footer } from '../../components';
 
 function IndexPage() {
     return (
-        <div>
+        <Fragment>
             <Head />
             <List />
             <Footer selectedIndex={0} />
-        </div>
+        </Fragment>
     );
 }
 
