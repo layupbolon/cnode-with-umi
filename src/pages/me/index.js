@@ -8,6 +8,16 @@ import { Nav, UserInfo, Footer } from '../../components';
 const Alert = Modal.alert;
 
 class Me extends React.PureComponent {
+    constructor(props) {
+        super(props);
+
+        const storageResult = localStorage.getItem('User');
+        if (!storageResult) {
+            router.replace('/login');
+            return;
+        }
+    }
+
     componentDidMount() {
         const storageResult = localStorage.getItem('User');
         if (!storageResult) {
