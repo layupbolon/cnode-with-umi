@@ -22,7 +22,7 @@ export default {
       pwa: false,
       hd: false,
       fastClick: true,
-      title: 'default title',
+      title: 'cnode-with-umi',
     }],
   ],
   base:'/cnode-with-umi/',
