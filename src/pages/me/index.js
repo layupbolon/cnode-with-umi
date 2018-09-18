@@ -62,7 +62,7 @@ class Me extends React.PureComponent {
 }
 
 function mapStateToProps({ user }) {
-    return { userData: user.userData };
+    return { userData: user.userData || {}};
 }
 
 export default connect(mapStateToProps)(Me);
