@@ -19,7 +19,7 @@ export default {
         exclude: [],
       },
       hardSource: true,
-      pwa: true,
+      pwa: false,
       hd: false,
       fastClick: true,
       title: 'default title',
