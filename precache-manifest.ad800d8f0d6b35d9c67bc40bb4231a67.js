@@ -1,6 +1,6 @@
 self.__precacheManifest = [
   {
-    "revision": "5799718734ed5d8483e3",
+    "revision": "3d7f3e650a5e2379e625",
     "url": "/cnode-with-umi/p__publish__index.chunk.css"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = [
     "url": "/cnode-with-umi/vendors.chunk.css"
   },
   {
-    "revision": "5799718734ed5d8483e3",
+    "revision": "3d7f3e650a5e2379e625",
     "url": "/cnode-with-umi/p__publish__index.async.js"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/cnode-with-umi/vendors.async.js"
   },
   {
-    "revision": "889855b26cf68c67966b",
+    "revision": "38627c93cfc9103b866b",
     "url": "/cnode-with-umi/p__login__index.chunk.css"
   },
   {
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/cnode-with-umi/static/iconfont.cc5250e7.eot"
   },
   {
-    "revision": "889855b26cf68c67966b",
+    "revision": "38627c93cfc9103b866b",
     "url": "/cnode-with-umi/p__login__index.async.js"
   },
   {
@@ -48,23 +48,23 @@ self.__precacheManifest = [
     "url": "/cnode-with-umi/p__topicList__models__topicList.js.async.js"
   },
   {
-    "revision": "6b5c31159d6ec88f968e",
+    "revision": "8fd3264a909ff0bad131",
     "url": "/cnode-with-umi/p__msg__index.async.js"
   },
   {
-    "revision": "6b5c31159d6ec88f968e",
+    "revision": "8fd3264a909ff0bad131",
     "url": "/cnode-with-umi/p__msg__index.chunk.css"
   },
   {
-    "revision": "947200a17f7ed286be91",
+    "revision": "a39aa6c1294f11261e40",
     "url": "/cnode-with-umi/p__topicDetail__$id.async.js"
   },
   {
-    "revision": "947200a17f7ed286be91",
+    "revision": "a39aa6c1294f11261e40",
     "url": "/cnode-with-umi/p__topicDetail__$id.chunk.css"
   },
   {
-    "revision": "3580ed42dd2a13fe34bb",
+    "revision": "93705f48a542d2f5bfd5",
     "url": "/cnode-with-umi/p__user__$name.async.js"
   },
   {
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/cnode-with-umi/p__topicDetail__models__topicDetail.js.async.js"
   },
   {
-    "revision": "efdaef3161fa5a18c233",
+    "revision": "4a8ef6ff59ca2823bc1a",
     "url": "/cnode-with-umi/p__me__index.async.js"
   },
   {

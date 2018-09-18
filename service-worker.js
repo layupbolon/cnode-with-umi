@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.5.0/workbox-sw.js");
 
 importScripts(
-  "/cnode-with-umi/precache-manifest.117513b9cafac1afa698ad8d0152b66d.js"
+  "/cnode-with-umi/precache-manifest.ad800d8f0d6b35d9c67bc40bb4231a67.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "cnode-with-umi"});
