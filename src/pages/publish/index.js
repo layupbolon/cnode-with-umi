@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'dva';
 import { Toast } from 'antd-mobile';
 
@@ -31,7 +31,7 @@ class Publish extends React.PureComponent {
       const { tab, title, content } = this.state;
 
       return (
-          <div>
+          <Fragment>
               <Nav title={'发表主题'} showBackIcon={false} showPublishIcon={true} rightIconFunc={() => {
                   dispatch({
                       type: 'publish/publish', payload: {
@@ -84,7 +84,7 @@ class Publish extends React.PureComponent {
                   </div>
               </div>
               <Footer selectedIndex={1} />
-          </div>
+          </Fragment>
       );
   }
 }

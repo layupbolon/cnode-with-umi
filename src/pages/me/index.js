@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 import { connect } from 'dva';
 import router from 'umi/router';
 import { Modal } from 'antd-mobile';
@@ -38,7 +38,7 @@ class Me extends React.PureComponent {
         if (!userData || !userData.loginname) return null;
 
         return (
-            <div>
+            <Fragment>
                 <Nav title={'个人中心'} showBackIcon={false} showSignOutIcon={true} rightIconFunc={() => {
                     Alert('退出', '确定退出登录？', [
                         { text: '取消', onPress: () => console.log('cancel') },
@@ -56,7 +56,7 @@ class Me extends React.PureComponent {
                 />
                 <UserInfo userData={userData} />
                 <Footer selectedIndex={3} />
-            </div>
+            </Fragment>
         );
     }
 }

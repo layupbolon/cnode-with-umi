@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'dva';
 import Link from 'umi/link';
 import { Toast } from 'antd-mobile';
@@ -13,7 +13,7 @@ function TopicDetail({ dataSource, replies, dispatch }) {
     const storageResult = localStorage.getItem('User');
 
     return (
-        <div>
+        <Fragment>
             <Nav title={'详 情'} />
             <div className={styles.topicDetail}>
                 <div className={styles.topicTopInfo}>
@@ -119,7 +119,7 @@ function TopicDetail({ dataSource, replies, dispatch }) {
                     storageResult && <Comment topic_id={dataSource.id} />
                 }
             </div>
-        </div>
+        </Fragment>
     );
 }
 

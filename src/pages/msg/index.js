@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'dva';
 import Link from 'umi/link';
 
@@ -37,7 +37,7 @@ class Msg extends React.PureComponent {
         Array.prototype.push.apply(hasnot_read_messages, has_read_messages);
 
         return (
-            <div>
+            <Fragment>
                 <Nav title={'消息'} showBackIcon={false} />
                 <div style={{ marginTop: '7vh' }}>
                     {
@@ -71,7 +71,7 @@ class Msg extends React.PureComponent {
                     }
                 </div>
                 <Footer selectedIndex={2} />
-            </div>
+            </Fragment>
         );
     }
 }

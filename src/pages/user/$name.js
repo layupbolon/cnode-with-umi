@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'dva';
 
 import { Nav, UserInfo } from '../../components';
@@ -6,10 +6,10 @@ import { Nav, UserInfo } from '../../components';
 function User({ userData }) {
 
     return (
-        <div>
+        <Fragment>
             <Nav title={`${userData.loginname}的个人中心`} />
             <UserInfo userData={userData}></UserInfo>
-        </div>
+        </Fragment>
     );
 }
 

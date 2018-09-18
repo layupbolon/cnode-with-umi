@@ -1,5 +1,5 @@
 /* eslint-disable react/no-string-refs */
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'dva';
 import router from 'umi/router';
 import { Toast } from 'antd-mobile';
@@ -12,7 +12,7 @@ class Login extends React.PureComponent {
         const { dispatch } = this.props;
 
         return (
-            <div>
+            <Fragment>
                 <Nav title={'登录'} />
                 <div className={styles.login}>
                     <input className={styles.input} ref="accesstoken" type="text" placeholder="Access Token" />
@@ -33,7 +33,7 @@ class Login extends React.PureComponent {
                     }}>登录
                     </button>
                 </div>
-            </div>
+            </Fragment>
         );
     }
 }
