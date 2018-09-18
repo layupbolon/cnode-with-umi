@@ -1,41 +1,40 @@
-import React,{Fragment} from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'dva';
 import router from 'umi/router';
 import { Modal } from 'antd-mobile';
 
 import { Nav, UserInfo, Footer } from '../../components';
+import styles from '../msg/msg.css';
 
 const Alert = Modal.alert;
 
 class Me extends React.PureComponent {
-    constructor(props) {
-        super(props);
-
-        const storageResult = localStorage.getItem('User');
-        if (!storageResult) {
-            router.replace('/login');
-            return;
-        }
-    }
-
     componentDidMount() {
         const storageResult = localStorage.getItem('User');
-        if (!storageResult) {
-            router.replace('/login');
-            return;
-        }
-
-        const user = JSON.parse(storageResult);
-        if (user) {
-            const { dispatch } = this.props;
-            dispatch({ type: 'user/getUserData', payload: { userName: user.loginname }});
+        if (storageResult) {
+            const user = JSON.parse(storageResult);
+            if (user) {
+                const { dispatch } = this.props;
+                dispatch({ type: 'user/getUserData', payload: { userName: user.loginname }});
+            }
         }
     }
 
     render() {
-        const { dispatch, userData } = this.props;
 
-        if (!userData || !userData.loginname) return null;
+        if (!localStorage.getItem('User')) {
+            return (
+                <div>
+                    <Nav title={'消息'} showBackIcon={false} />
+                    <div className={styles.notLogin}>
+              您还未登录，请先<a className={styles.loginText} href={'/login'}>登录</a>
+                    </div>
+                    <Footer selectedIndex={3} />
+                </div>
+            );
+        }
+
+        const { dispatch, userData } = this.props;
 
         return (
             <Fragment>
