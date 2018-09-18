@@ -25,4 +25,6 @@ export default {
       title: 'default title',
     }],
   ],
+  base:'/cnode-with-umi/',
+  publicPath:'/cnode-with-umi/',
 };
