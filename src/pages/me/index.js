@@ -25,7 +25,7 @@ class Me extends React.PureComponent {
     render() {
         const { dispatch, userData } = this.props;
 
-        if (!userData) return null;
+        if (!userData || !userData.loginname) return null;
 
         return (
             <div>
