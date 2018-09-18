@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/cnode-with-umi/p__publish__index.chunk.css"
   },
   {
-    "revision": "19ebc770a3c2b08f61a6",
+    "revision": "c5dc18f9705ccb36b42f",
     "url": "/cnode-with-umi/vendors.chunk.css"
   },
   {
@@ -12,15 +12,15 @@ self.__precacheManifest = [
     "url": "/cnode-with-umi/p__publish__index.async.js"
   },
   {
-    "revision": "347dd2f2d549913f6f78",
+    "revision": "334dd1a1b0ff6df53767",
     "url": "/cnode-with-umi/umi.css"
   },
   {
-    "revision": "347dd2f2d549913f6f78",
+    "revision": "334dd1a1b0ff6df53767",
     "url": "/cnode-with-umi/umi.js"
   },
   {
-    "revision": "19ebc770a3c2b08f61a6",
+    "revision": "c5dc18f9705ccb36b42f",
     "url": "/cnode-with-umi/vendors.async.js"
   },
   {
@@ -44,16 +44,12 @@ self.__precacheManifest = [
     "url": "/cnode-with-umi/static/iconfont.7074246f.ttf"
   },
   {
-    "revision": "af6c128b17356498e1c9",
-    "url": "/cnode-with-umi/p__topicList__models__topicList.js.async.js"
+    "revision": "c1d488d9950910fe1bd7",
+    "url": "/cnode-with-umi/p__topicList__index.chunk.css"
   },
   {
-    "revision": "8fd3264a909ff0bad131",
-    "url": "/cnode-with-umi/p__msg__index.async.js"
-  },
-  {
-    "revision": "8fd3264a909ff0bad131",
-    "url": "/cnode-with-umi/p__msg__index.chunk.css"
+    "revision": "9d33b68a76077718605e",
+    "url": "/cnode-with-umi/p__publish__models__publish.js.async.js"
   },
   {
     "revision": "a39aa6c1294f11261e40",
@@ -68,27 +64,27 @@ self.__precacheManifest = [
     "url": "/cnode-with-umi/p__user__$name.async.js"
   },
   {
-    "revision": "612eff1549144b2e6a01",
-    "url": "/cnode-with-umi/p__msg__models__msg.js.async.js"
+    "revision": "b54ecf2009b3e8efcb30",
+    "url": "/cnode-with-umi/p__topicDetail__models__topicDetail.js.async.js"
   },
   {
-    "revision": "9d33b68a76077718605e",
-    "url": "/cnode-with-umi/p__publish__models__publish.js.async.js"
-  },
-  {
-    "revision": "c1d488d9950910fe1bd7",
-    "url": "/cnode-with-umi/p__topicList__index.chunk.css"
+    "revision": "af6c128b17356498e1c9",
+    "url": "/cnode-with-umi/p__topicList__models__topicList.js.async.js"
   },
   {
     "revision": "c1d488d9950910fe1bd7",
     "url": "/cnode-with-umi/p__topicList__index.async.js"
   },
   {
-    "revision": "b54ecf2009b3e8efcb30",
-    "url": "/cnode-with-umi/p__topicDetail__models__topicDetail.js.async.js"
+    "revision": "612eff1549144b2e6a01",
+    "url": "/cnode-with-umi/p__msg__models__msg.js.async.js"
   },
   {
-    "revision": "4a8ef6ff59ca2823bc1a",
+    "revision": "0a3af0c29071c36ae05d",
+    "url": "/cnode-with-umi/p__msg__index.async.js"
+  },
+  {
+    "revision": "589993803c7ad4ac4174",
     "url": "/cnode-with-umi/p__me__index.async.js"
   },
   {
