@@ -4,7 +4,7 @@ import router from 'umi/router';
 import { Modal } from 'antd-mobile';
 
 import { Nav, UserInfo, Footer } from '../../components';
-import styles from '../msg/msg.css';
+import styles1 from '../msg/msg.css';
 
 const Alert = Modal.alert;
 
